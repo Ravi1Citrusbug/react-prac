@@ -14,8 +14,10 @@ import DataFetchingOne from './Datafetching/DataFetchingOne';
 import DataFetchingTwo from './Datafetching/DataFetchingTwo';
 import DataFetchingThree from './Datafetching/DataFetchingThree';
 import ComponentC from './Usecontext/ComponentC';
+import CounterOne from  "./usereducer/CounterOne";
 export const userContext = React.createContext();
 export const channelContext = React.createContext();
+
 function App() {
   return (
     <div className="App">
@@ -31,12 +33,13 @@ function App() {
       {/* <DataFetchingOne></DataFetchingOne> */}
       {/* <DataFetchingTwo></DataFetchingTwo> */}
       {/* <DataFetchingThree></DataFetchingThree> */}
-      <userContext.Provider value ={ 'ravi'}>
+      {/* <userContext.Provider value ={ 'ravi'}>
          <channelContext.Provider value = { 'reactjs'}>
             <ComponentC/>
 
           </channelContext.Provider>
-      </userContext.Provider>
+      </userContext.Provider> */}
+      <CounterOne></CounterOne>
     </div>
   );
 }
