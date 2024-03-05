@@ -1,5 +1,6 @@
 
 import './App.css';
+import React from 'react';
 import HookCounterone from './Usestate/HookCounterone';
 import HookCounter2 from './Usestate/HookCounter2';
 import HookCounter3 from './Usestate/HookCounter3';
@@ -12,6 +13,9 @@ import IntervalHookCounter from './Datafetching/IntervalHookCounter';
 import DataFetchingOne from './Datafetching/DataFetchingOne';
 import DataFetchingTwo from './Datafetching/DataFetchingTwo';
 import DataFetchingThree from './Datafetching/DataFetchingThree';
+import ComponentC from './Usecontext/ComponentC';
+export const userContext = React.createContext();
+export const channelContext = React.createContext();
 function App() {
   return (
     <div className="App">
@@ -26,7 +30,13 @@ function App() {
       {/* <IntervalHookCounter></IntervalHookCounter> */}
       {/* <DataFetchingOne></DataFetchingOne> */}
       {/* <DataFetchingTwo></DataFetchingTwo> */}
-      <DataFetchingThree></DataFetchingThree>
+      {/* <DataFetchingThree></DataFetchingThree> */}
+      <userContext.Provider value ={ 'ravi'}>
+         <channelContext.Provider value = { 'reactjs'}>
+            <ComponentC/>
+
+          </channelContext.Provider>
+      </userContext.Provider>
     </div>
   );
 }
