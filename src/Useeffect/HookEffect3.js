@@ -15,7 +15,7 @@ function HookEffect3() {
       console.log("finished");
       window.removeEventListener("mousemove", mouseMove);
     };
-  }, []);
+  },[]);
   return (
     <div>
       HOOKS X-{x} Y-{y}

@@ -20,7 +20,8 @@ import CounterThree from  "./usereducer/CounterThree";
 import ComponentA from './usereducer_usecontext/ComponentA';
 import ComponentB from './usereducer_usecontext/ComponentB';
 import ComponentC from './usereducer_usecontext/ComponentC';
-import FetchingErrorState from './Data_fetching_error/FetchingErrorState';
+import  FetchingErrorState from './Data_fetching_error/FetchingErrorState';
+import ParentComponent from './Usecallback/ParentComponent'
 export const userContext = React.createContext();
 export const channelContext = React.createContext();
 export const countContext = React.createContext();
@@ -56,16 +57,17 @@ function App() {
       {/* <DataFetchingOne></DataFetchingOne> */}
       {/* <DataFetchingTwo></DataFetchingTwo> */}
       {/* <DataFetchingThree></DataFetchingThree> */}
-      {/* <userContext.Provider value ={ 'ravi'}>
+      {/* <userContext.Provider value ={'ravi'}>
          <channelContext.Provider value = { 'reactjs'}>
             <ComponentC/>
 
           </channelContext.Provider>
-      </userContext.Provider> */}
+      </userContext.Provider>  */}
       {/* <CounterOne></CounterOne> */}
       {/* <CounterTwo></CounterTwo> */}
       {/* <CounterThree></CounterThree> */}
-      <FetchingErrorState></FetchingErrorState>
+      {/* <FetchingErrorState></FetchingErrorState> */}
+      <ParentComponent></ParentComponent>
      
     </div>
     // <div className="App">

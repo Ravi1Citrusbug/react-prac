@@ -9,7 +9,8 @@ const reducer=(state,action)=>{
         case 'reset':
             return intialState
         default:
-            return state            
+            return state   
+            
     }
 }
 function CounterThree(){

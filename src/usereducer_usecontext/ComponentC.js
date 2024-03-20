@@ -5,9 +5,9 @@ function ComponentC(){
     return (
         <div>
             C
-            <button onClick={()=>CountContext.dispatchCount('increment')}>increment</button>
-            <button  onClick={()=>CountContext.dispatchCount('decrement')}>decrement</button>
-            <button  onClick={()=>CountContext.dispatchCount('reset')}>reset</button>
+            <button onClick={()=>CountContext.dispatch('increment')}>increment</button>
+            <button  onClick={()=>CountContext.dispatch('decrement')}>decrement</button>
+            <button  onClick={()=>CountContext.dispatch('reset')}>reset</button>
         </div>
     )
     }
